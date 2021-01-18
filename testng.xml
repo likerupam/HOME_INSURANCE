@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="7" name="Travelers Test">
+  <classes>
+  	<class name="com.insurance.pages.Controller" >
+  	<methods>
+        <include name="startTest" />
+     </methods>
+  	</class>
+  	
+  	<class name="com.insurance.pages.FrontPage" >
+  	<methods>
+        <include name="openURL" />
+        <include name="frontPage" />
+     </methods>
+  	</class>
+  	
+  	<class name="com.insurance.pages.Start" >
+  	<methods>
+        <include name="secondPage" />
+     </methods>
+  	</class>
+  	
+  	<class name="com.insurance.pages.HomeBasics" >
+  	<methods>
+        <include name="homeBasics" />
+     </methods>
+  	</class>
+  	
+  	<class name="com.insurance.pages.HomeInterior" >
+  	<methods>
+        <include name="homeInterior" />
+     </methods>
+  	</class>
+  	
+  	<class name="com.insurance.pages.HomeExterior" >
+  	<methods>
+        <include name="homeExterior" />
+     </methods>
+  	</class>
+  	
+  	<class name="com.insurance.pages.Quote" >
+  	<methods>
+        <include name="retrieveData" />
+     </methods>
+  	</class>
+	  
+  </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

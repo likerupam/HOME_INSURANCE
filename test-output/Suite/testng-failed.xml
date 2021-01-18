@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Travelers Test(failed)">
+    <classes>
+      <class name="com.insurance.pages.Start">
+        <methods>
+          <include name="secondPage"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- com.insurance.pages.Start -->
+      <class name="com.insurance.pages.Quote">
+        <methods>
+          <include name="retrieveData"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- com.insurance.pages.Quote -->
+      <class name="com.insurance.pages.FrontPage">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="openURL"/>
+          <include name="frontPage"/>
+        </methods>
+      </class> <!-- com.insurance.pages.FrontPage -->
+    </classes>
+  </test> <!-- Travelers Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
